@@ -1,4 +1,8 @@
 import React from "react";
+import github from "../../images/GithubUnion.svg";
+import instagram from "../../images/InstagramUnion.svg";
+import mail from "../../images/mailUnion.svg";
+import linked from "../../images/LinkedinUnion.svg";
 
 const SolcialsButtons = () => {
   return (
@@ -10,7 +14,7 @@ const SolcialsButtons = () => {
           target="_blank"
         >
           <img
-            src="../../images/GithubUnion.svg"
+            src={github}
             alt="Github"
             class="w-14 h-14 lg:w-16 lg:h-16 rounded-md"
           />
@@ -20,7 +24,7 @@ const SolcialsButtons = () => {
           href="mailto:jessegarca5@gmail.com"
         >
           <img
-            src="../../images/mailUnion.svg"
+            src={mail}
             alt="Mail"
             class="w-14 h-14 lg:w-16 lg:h-16 rounded-md"
           />
@@ -31,7 +35,7 @@ const SolcialsButtons = () => {
           target="_blank"
         >
           <img
-            src="../../images/InstagramUnion.svg"
+            src={instagram}
             alt="Instagram"
             class="w-14 h-14 lg:w-16 lg:h-16 rounded-md"
           />
@@ -42,7 +46,7 @@ const SolcialsButtons = () => {
           target="_blank"
         >
           <img
-            src="../../images/LinkedinUnion.svg"
+            src={linked}
             alt="Linkedin"
             class="w-14 h-14 lg:w-16 lg:h-16 rounded-md"
           />
@@ -57,11 +61,11 @@ const SolcialsButtons = () => {
 
       <div class="bg-gradient-to-b from-white to-green-300 h-40 w-screen z-10"></div>
 
-      
-      <div className="sticky w-full bg-green-300 h-16 flex justify-center"> 
-        <h1 className="relative top-5 text-3xl font-bold font-mono ">About Me!</h1>
+      <div className="sticky w-full bg-green-300 h-16 flex justify-center">
+        <h1 className="relative top-5 text-3xl font-bold font-mono ">
+          About Me!
+        </h1>
       </div>
-
     </div>
   );
 };

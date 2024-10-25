@@ -1,4 +1,5 @@
 import React from "react";
+import me from "../../images/IMG_7902.jpeg";
 
 const AboutMe = () => {
   return (
@@ -19,7 +20,7 @@ const AboutMe = () => {
           </div>
           <div className="static w-full lg:w-2/5 flex duration-300 transform peer-hover:opacity-50 z-20">
             <img
-              src="../../images/IMG_7902.jpeg"
+              src={me}
               alt="me!"
               className="relative rounded-lg shadow-lg h-64 sm:h-80 lg:h-96 lg:-left-4 lg:bottom-8 lg:right-6 left-32 bottom-6"
             />
