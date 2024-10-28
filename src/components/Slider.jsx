@@ -5,14 +5,19 @@ import "swiper/css/pagination";
 import "swiper/css/free-mode";
 
 import { FreeMode, Pagination } from "swiper/modules";
-
 import { RxArrowTopRight } from "react-icons/rx";
 import { ServiceData } from "../SliderConstants";
 
 const Slider = () => {
+  const handleClick = (url) => {
+    if (url) {
+      window.open(url, "_blank", "noopener,noreferrer");
+    }
+  };
+
   return (
     <div className="flex items-center justify-center flex-col">
-      <h1 className="text-3xl font-bold mb-24 mt-24"> My Projects!</h1>
+      <h1 className="text-3xl font-bold mb-20 mt-36"> My Projects!</h1>
       <Swiper
         breakpoints={{
           340: {
@@ -33,7 +38,10 @@ const Slider = () => {
       >
         {ServiceData.map((item) => (
           <SwiperSlide key={item.title}>
-            <div className="flex flex-col gap-6 mb-20 group relative shadow-lg text-black rounded-xl px-6 py-8 h-[250px] w-[215px] lg:h-[400px] lg:w-[350px] overflow-hidden cursor-auto">
+            <div
+              onClick={() => handleClick(item.projectUrl)}
+              className="flex flex-col gap-6 mb-20 group relative shadow-lg text-black rounded-xl px-6 py-8 h-[250px] w-[215px] lg:h-[400px] lg:w-[350px] overflow-hidden cursor-pointer"
+            >
               <div
                 className="absolute inset-0 bg-cover bg-center"
                 style={{ backgroundImage: `url(${item.backgroundImage})` }}
@@ -56,7 +64,7 @@ const Slider = () => {
         ))}
       </Swiper>
 
-      <div class="bg-gradient-to-b from-white to-green-300 h-40 w-screen z-10"></div>
+      <div className="bg-gradient-to-b from-white to-green-300 h-40 w-screen z-10"></div>
     </div>
   );
 };

@@ -1,21 +1,35 @@
-import React from "react";
+import React, { useRef } from "react";
 import NavBar from "./components/NavBar";
 import Slider from "./components/Slider";
 import TitleText from "./components/TitleText";
-import SolcialsButtons from "./components/SolcialsButtons";
 import AboutMe from "./components/AboutMe";
+import SocialButtons from "./components/SolcialsButtons";
 import Contact from "./components/Contact";
 import EndBit from "./components/EndBit";
 
 const App = () => {
+  const aboutRef = useRef(null);
+  const sliderRef = useRef(null);
+  const contactRef = useRef(null);
+
   return (
-    <div class="overflow-hidden">
-      <NavBar />
+    <div className="overflow-hidden">
+      <NavBar
+        aboutRef={aboutRef}
+        sliderRef={sliderRef}
+        contactRef={contactRef}
+      />
       <TitleText />
-      <SolcialsButtons />
-      <AboutMe />
-      <Slider />
-      <Contact />
+      <SocialButtons />
+      <section ref={aboutRef}>
+        <AboutMe />
+      </section>
+      <section ref={sliderRef}>
+        <Slider />
+      </section>
+      <section ref={contactRef}>
+        <Contact />
+      </section>
       <EndBit />
     </div>
   );

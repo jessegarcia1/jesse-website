@@ -58,14 +58,6 @@ const SolcialsButtons = () => {
           Peep the socials!
         </div>
       </div>
-
-      <div class="bg-gradient-to-b from-white to-green-300 h-40 w-screen z-10"></div>
-
-      <div className="sticky w-full bg-green-300 h-16 flex justify-center">
-        <h1 className="relative top-5 text-3xl font-bold font-mono ">
-          About Me!
-        </h1>
-      </div>
     </div>
   );
 };
