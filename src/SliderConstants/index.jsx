@@ -15,7 +15,7 @@ export const ServiceData = [
   },
   {
     icon: RxDesktop,
-    title: "NER Electric Racing",
+    title: "Northeastern Electric Racing",
     content:
       "A Northeastern club where I designed the features and layout of their calendar page.",
     backgroundImage: ElectricRacing,
