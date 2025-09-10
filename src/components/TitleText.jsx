@@ -12,7 +12,7 @@ const TitleText = () => {
             Jesse Garcia.
           </h1>
           <h2 className="text-4xl lg:text-5xl font-mono mt-5 break-words">
-            I like <span className="text-green-600">software!</span>
+            I love building <span className="text-green-600">software!</span>
           </h2>
         </div>
       </div>

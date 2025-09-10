@@ -8,7 +8,7 @@ function NavBar({ aboutRef, sliderRef, contactRef }) {
   };
 
   return (
-    <nav className="fixed z-50 h-16 w-full bg-green-200 drop-shadow-md flex items-center justify-center">
+    <nav className="fixed z-50 h-16 w-full bg-green-200 drop-shadow-md flex items-center font-mono justify-center">
       <div className="flex space-x-16">
         <button
           onClick={() => handleJumpToSection(aboutRef)}

@@ -17,7 +17,10 @@ const Slider = () => {
 
   return (
     <div className="flex items-center justify-center flex-col">
-      <h1 className="text-3xl font-bold mb-20 mt-36"> My Projects!</h1>
+      <h1 className="text-3xl font-bold mb-20 mt-36 font-mono">
+        {" "}
+        My Projects!
+      </h1>
       <Swiper
         breakpoints={{
           340: {
@@ -53,8 +56,8 @@ const Slider = () => {
                   <h1 className="text-base sm:text-lg lg:text-2xl font-bold">
                     {item.title}{" "}
                   </h1>
-                  <p className="text-sm sm:text-base lg:text-lg">
-                    {item.content}{" "}
+                  <p className="hidden lg:block text-sm sm:text-base lg:text-lg">
+                    {item.content}
                   </p>
                 </div>
               </div>

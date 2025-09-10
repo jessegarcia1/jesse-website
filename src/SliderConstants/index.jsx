@@ -2,7 +2,7 @@ import { RxCrop, RxDesktop, RxPencil2, RxRocket } from "react-icons/rx";
 
 import ElectricRacing from "../../images/electricRacing.png";
 import Stonks from "../../images/stock.png";
-import DootCare from "../../images/DootCare.png";
+import DootCare from "../../images/reportwebsite.png";
 
 export const ServiceData = [
   {
@@ -23,10 +23,10 @@ export const ServiceData = [
   },
   {
     icon: RxPencil2,
-    title: "Healthcare Data Automation",
+    title: "Quick Care Report",
     content:
-      "Automated a patient data collection system for a local healtcare company.",
+      "Full stack patient data collection website for a local medical practice.",
     backgroundImage: DootCare,
-    projectUrl: "https://www.criterions.com",
+    projectUrl: "https://quickcarereport.com/",
   },
 ];
